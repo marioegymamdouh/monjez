@@ -595,14 +595,28 @@
 
 								<div class="widget widget-filter-links">
 
+									<h4>Select Category</h4>
+									<ul class="custom-filter pl-2" data-container="#shop" data-active-class="active-filter" style="max-height: 250px; overflow-y: auto">
+										<li class="widget-filter-reset active-filter"><a href="#" data-filter="*">Clear</a></li>
+										<li><a href="#" data-filter=".sf-dress">Dress</a></li>
+										<li><a href="#" data-filter=".sf-tshirts">Tshirts</a></li>
+										<li><a href="#" data-filter=".sf-pants">Pants</a></li>
+										<li><a href="#" data-filter=".sf-sunglasses">Sunglasses</a></li>
+										<li><a href="#" data-filter=".sf-shoes">Shoes</a></li>
+										<li><a href="#" data-filter=".sf-watches">Watches</a></li>
+										<li><a href="#" data-filter=".sf-dress">Dress</a></li>
+										<li><a href="#" data-filter=".sf-tshirts">Tshirts</a></li>
+										<li><a href="#" data-filter=".sf-pants">Pants</a></li>
+										<li><a href="#" data-filter=".sf-sunglasses">Sunglasses</a></li>
+										<li><a href="#" data-filter=".sf-shoes">Shoes</a></li>
+										<li><a href="#" data-filter=".sf-watches">Watches</a></li>
+									</ul>
+
+								</div>
+
+								<div class="widget widget-filter-links">
+
 									<h4>Filters</h4>
-									<select class="form-control required valid mb-3" name="Category">
-										<option value="">Select Category</option>
-										<option value="Part-Time">Part-Time</option>
-										<option value="Full-Time">Full-Time</option>
-										<option value="Internship">Internship</option>
-										<option value="Freelance">Freelance</option>
-									</select>
 									<select class="form-control required valid mb-3" name="nationality">
 										<option value="">Select Nationality:</option>
 										<option value="Part-Time">Part-Time</option>
@@ -619,6 +633,19 @@
 									</select>
 									<select class="form-control required valid mb-3" name="marital-status">
 										<option value="">Select Marital Status</option>
+										<option value="Part-Time">Part-Time</option>
+										<option value="Full-Time">Full-Time</option>
+										<option value="Internship">Internship</option>
+										<option value="Freelance">Freelance</option>
+									</select>
+									<select class="form-control required valid mb-3" name="type">
+										<option value="">Select Type</option>
+										<option value="Part-Time">All</option>
+										<option value="Full-Time">New</option>
+										<option value="Internship">Retrieved</option>
+									</select>
+									<select class="form-control required valid mb-3" name="vacations">
+										<option value="">Select Vacations</option>
 										<option value="Part-Time">Part-Time</option>
 										<option value="Full-Time">Full-Time</option>
 										<option value="Internship">Internship</option>
@@ -646,55 +673,13 @@
 
 								<div class="widget widget-filter-links">
 
-									<h4>Select Type:</h4>
-									<div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
-										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" checked name="form-type" value="">All
-										</label>
-										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" name="form-type" value="New">New
-										</label>
-										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" name="form-type" value="Retrieved">Retrieved
-										</label>
-									</div>
-
-								</div>
-
-								<div class="widget widget-filter-links">
-
-									<h4>Vacations:</h4>
-									<div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
-										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" checked name="form-vacations" value="">All
-										</label>
-										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" name="form-vacations" value="Yes">Yes
-										</label>
-										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" name="form-vacations" value="No">No
-										</label>
-									</div>
-
-								</div>
-
-								<div class="widget widget-filter-links">
-
 									<h4>Estimate Budget:</h4>
 									<input class="input-range-slider filter-salary required" name="realestate-enquiry-budget" id="filter-salary" />
 
-								</div>
-
-								<div class="widget widget-filter-links">
-
-									<h4>Select Age:</h4>
+									<h4 class="mt-5">Select Age:</h4>
 									<input class="input-range-slider filter-age required" name="realestate-enquiry-budget" id="filter-age" />
 
-								</div>
-
-								<div class="widget widget-filter-links">
-
-									<h4>Years of Experience:</h4>
+									<h4 class="mt-5">Years of Experience:</h4>
 									<input class="input-range-slider filter-exp required" name="realestate-enquiry-budget" id="filter-exp" />
 
 								</div>
