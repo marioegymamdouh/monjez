@@ -177,6 +177,8 @@
 						============================================= -->
 						<div class="postcontent col-lg-9 order-lg-last">
 
+							<input type="text" name="search" class="form-control required valid mb-4 d-block d-lg-none" value="" placeholder="Enter your keywords">
+
 							<!-- Shop
 							============================================= -->
 							<div id="shop" class="shop row grid-container gutter-20 overflow-visible" data-layout="fitRows">
@@ -581,49 +583,42 @@
 
 						<!-- Sidebar
 						============================================= -->
-						<div class="sidebar col-lg-3">
+						<div class="sidebar col-lg-3 mb-5">
 							<div class="sidebar-widgets-wrap">
 
-								<div class="widget widget-filter-links">
+								<div class="widget widget-filter-links d-none d-lg-block">
 
 									<h4>Search</h4>
-									<input type="text" name="search" id="search" class="form-control required valid" value="" placeholder="Enter your keywords">
+									<input type="text" name="search" class="form-control required valid" value="" placeholder="Enter your keywords">
 
 								</div>
 
 								<div class="widget widget-filter-links">
 
-									<h4>Select Category</h4>
-									<ul class="custom-filter pl-2" data-container="#shop" data-active-class="active-filter">
-										<li class="widget-filter-reset active-filter"><a href="#" data-filter="*">Clear</a></li>
-										<li><a href="#" data-filter=".sf-dress">Dress</a></li>
-										<li><a href="#" data-filter=".sf-tshirts">Tshirts</a></li>
-										<li><a href="#" data-filter=".sf-pants">Pants</a></li>
-										<li><a href="#" data-filter=".sf-sunglasses">Sunglasses</a></li>
-										<li><a href="#" data-filter=".sf-shoes">Shoes</a></li>
-										<li><a href="#" data-filter=".sf-watches">Watches</a></li>
-									</ul>
-
-								</div>
-
-								<div class="widget widget-filter-links">
-
-									<h4>Select Nationality:</h4>
-									<select class="form-control required valid" name="jobs-application-type" id="jobs-application-type">
-										<option value="">-- Select One --</option>
+									<h4>Filters</h4>
+									<select class="form-control required valid mb-3" name="Category">
+										<option value="">Select Category</option>
 										<option value="Part-Time">Part-Time</option>
 										<option value="Full-Time">Full-Time</option>
 										<option value="Internship">Internship</option>
 										<option value="Freelance">Freelance</option>
 									</select>
-
-								</div>
-
-								<div class="widget widget-filter-links">
-
-									<h4>Select Religion:</h4>
-									<select class="form-control required valid" name="jobs-application-type">
-										<option value="">-- Select One --</option>
+									<select class="form-control required valid mb-3" name="nationality">
+										<option value="">Select Nationality:</option>
+										<option value="Part-Time">Part-Time</option>
+										<option value="Full-Time">Full-Time</option>
+										<option value="Internship">Internship</option>
+										<option value="Freelance">Freelance</option>
+									</select>
+									<select class="form-control required valid mb-3" name="religion">
+										<option value="">Select Religion</option>
+										<option value="Part-Time">Part-Time</option>
+										<option value="Full-Time">Full-Time</option>
+										<option value="Internship">Internship</option>
+										<option value="Freelance">Freelance</option>
+									</select>
+									<select class="form-control required valid mb-3" name="marital-status">
+										<option value="">Select Marital Status</option>
 										<option value="Part-Time">Part-Time</option>
 										<option value="Full-Time">Full-Time</option>
 										<option value="Internship">Internship</option>
@@ -637,13 +632,47 @@
 									<h4>Select Gender:</h4>
 									<div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
 										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" checked name="fitness-form-sex" value="">All
+											<input type="radio" class="required form-control" checked name="form-gender" value="">All
 										</label>
 										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" name="fitness-form-sex" value="Male">Male
+											<input type="radio" class="required form-control" name="form-gender" value="Male">Male
 										</label>
 										<label class="btn btn-outline-dark font-body ls0 nott">
-											<input type="radio" class="required form-control" name="fitness-form-sex" value="Female">Female
+											<input type="radio" class="required form-control" name="form-gender" value="Female">Female
+										</label>
+									</div>
+
+								</div>
+
+								<div class="widget widget-filter-links">
+
+									<h4>Select Type:</h4>
+									<div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
+										<label class="btn btn-outline-dark font-body ls0 nott">
+											<input type="radio" class="required form-control" checked name="form-type" value="">All
+										</label>
+										<label class="btn btn-outline-dark font-body ls0 nott">
+											<input type="radio" class="required form-control" name="form-type" value="New">New
+										</label>
+										<label class="btn btn-outline-dark font-body ls0 nott">
+											<input type="radio" class="required form-control" name="form-type" value="Retrieved">Retrieved
+										</label>
+									</div>
+
+								</div>
+
+								<div class="widget widget-filter-links">
+
+									<h4>Vacations:</h4>
+									<div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
+										<label class="btn btn-outline-dark font-body ls0 nott">
+											<input type="radio" class="required form-control" checked name="form-vacations" value="">All
+										</label>
+										<label class="btn btn-outline-dark font-body ls0 nott">
+											<input type="radio" class="required form-control" name="form-vacations" value="Yes">Yes
+										</label>
+										<label class="btn btn-outline-dark font-body ls0 nott">
+											<input type="radio" class="required form-control" name="form-vacations" value="No">No
 										</label>
 									</div>
 
@@ -660,6 +689,13 @@
 
 									<h4>Select Age:</h4>
 									<input class="input-range-slider filter-age required" name="realestate-enquiry-budget" id="filter-age" />
+
+								</div>
+
+								<div class="widget widget-filter-links">
+
+									<h4>Years of Experience:</h4>
+									<input class="input-range-slider filter-exp required" name="realestate-enquiry-budget" id="filter-exp" />
 
 								</div>
 
@@ -783,7 +819,6 @@
 			});
 			$(".filter-age").ionRangeSlider({
 				type: "double",
-				prefix: "$",
 				min: 20,
 				max: 60,
 				step: 1,
@@ -792,59 +827,15 @@
 				max_postfix: "+",
 				input_values_separator: ' to '
 			});
-			$(window).on( 'pluginIsotopeReady', function(){
-				$('#shop').isotope({
-					transitionDuration: '0.65s',
-					getSortData: {
-						name: '.product-title',
-						price_lh: function( itemElem ) {
-							if( $(itemElem).find('.product-price').find('ins').length > 0 ) {
-								var price = $(itemElem).find('.product-price ins').text();
-							} else {
-								var price = $(itemElem).find('.product-price').text();
-							}
-
-							priceNum = price.split("$");
-
-							return parseFloat( priceNum[1] );
-						},
-						price_hl: function( itemElem ) {
-							if( $(itemElem).find('.product-price').find('ins').length > 0 ) {
-								var price = $(itemElem).find('.product-price ins').text();
-							} else {
-								var price = $(itemElem).find('.product-price').text();
-							}
-
-							priceNum = price.split("$");
-
-							return parseFloat( priceNum[1] );
-						}
-					},
-					sortAscending: {
-						name: true,
-						price_lh: true,
-						price_hl: false
-					}
-				});
-
-				$('.custom-filter:not(.no-count)').children('li:not(.widget-filter-reset)').each( function(){
-					var element = $(this),
-							elementFilter = element.children('a').attr('data-filter'),
-							elementFilterContainer = element.parents('.custom-filter').attr('data-container');
-
-					elementFilterCount = Number( jQuery(elementFilterContainer).find( elementFilter ).length );
-
-					element.append('<span>'+ elementFilterCount +'</span>');
-
-				});
-
-				$('.shop-sorting li').click( function() {
-					$('.shop-sorting').find('li').removeClass( 'active-filter' );
-					$(this).addClass( 'active-filter' );
-					var sortByValue = $(this).find('a').attr('data-sort-by');
-					$('#shop').isotope({ sortBy: sortByValue });
-					return false;
-				});
+			$(".filter-exp").ionRangeSlider({
+				type: "double",
+				min: 0,
+				max: 40,
+				step: 1,
+				from:0,
+				to: 35,
+				max_postfix: "+",
+				input_values_separator: ' to '
 			});
 		});
 
