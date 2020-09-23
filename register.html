@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Mario" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Heebo:400,500,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<!--	<link rel="stylesheet" href="css/bootstrap-rtl.css" type="text/css" />-->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+<!--	<link rel="stylesheet" href="style-rtl.css" type="text/css" />-->
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- DatePicker CSS -->
+	<link rel="stylesheet" href="css/components/daterangepicker.css" type="text/css" />
+	<!-- Range Slider CSS -->
+	<link rel="stylesheet" href="css/components/ion.rangeslider.css" type="text/css" />
+
+	<!--  Demo cleaner Specific Stylesheet -->
+<!--	<link rel="stylesheet" href="css/colors.php?color=335EEE" type="text/css" /> &lt;!&ndash; Cleaner Theme Color &ndash;&gt;-->
+	<link rel="stylesheet" href="theme/css/fonts.css" type="text/css" /> <!-- Cleaner Theme Font -->
+	<link rel="stylesheet" href="theme/cleaner.css" type="text/css" /> <!-- Cleaner Theme Custom CSS -->
+	<!-- / -->
+
+	<!-- Document Title
+	============================================= -->
+	<title>Monjez - login</title>
+
+	<style>
+		.form-group > label.error {
+			display: block !important;
+			text-transform: none;
+		}
+
+		.form-group input.valid ~ label.error,
+		.form-group input[type="text"] ~ label.error,
+		.form-group input[type="email"] ~ label.error,
+		.form-group input[type="number"] ~ label.error,
+		.form-group select ~ label.error { display: none !important; }
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Top Bar
+		============================================= -->
+		<div id="top-bar">
+			<div class="container">
+
+				<div class="row justify-content-between">
+					<div class="col-12 col-md-auto">
+
+						<!-- Top Links
+						============================================= -->
+						<div class="top-links">
+							<ul class="top-links-container">
+								<li class="top-links-item"><a href="JavaScript:void(0)"><img src="theme/seo/images/flags/eng.png" alt="Lang">English</a>
+									<ul class="top-links-sub-menu">
+										<li class="top-links-item"><a href="#"><img src="theme/seo/images/flags/ara.png" alt="Lang">Arabic</a></li>
+										<li class="top-links-item"><a href="#"><img src="theme/seo/images/flags/eng.png" alt="Lang">English</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- .top-links end -->
+
+					</div>
+
+					<div class="col-12 col-md-auto">
+
+						<!-- Top Social
+						============================================= -->
+						<ul id="top-social">
+							<li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+							<li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+							<li><a href="#" class="si-dribbble"><span class="ts-icon"><i class="icon-dribbble"></i></span><span class="ts-text">Dribbble</span></a></li>
+							<li><a href="#" class="si-github"><span class="ts-icon"><i class="icon-github-circled"></i></span><span class="ts-text">Github</span></a></li>
+							<li><a href="#" class="si-pinterest"><span class="ts-icon"><i class="icon-pinterest"></i></span><span class="ts-text">Pinterest</span></a></li>
+							<li><a href="#" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
+							<li><a href="tel:+91.11.85412542" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+1.111.222.333</span></a></li>
+							<li><a href="mailto:noreply@canvas.com" class="si-email3"><span class="ts-icon"><i class="icon-envelope-alt"></i></span><span class="ts-text">noreply@canvas.com</span></a></li>
+						</ul><!-- #top-social end -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div><!-- #top-bar end -->
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header header-size-md border-0" data-sticky-shrink="false">
+			<div id="header-wrap">
+				<div class="container-fluid px-0">
+					<div class="header-row container">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="col col-sm-auto">
+							<a href="index.html" class="standard-logo"><img src="theme/images/logo.png" alt="Canvas Logo"></a>
+						</div><!-- #logo end -->
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+							<ul class="menu-container border-right-0 mr-0">
+								<li class="menu-item active">
+									<a class="menu-link" href="#"><div>Home</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Search</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>About Us</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Contact</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>Privacy Policy</div></a>
+								</li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+
+			<div class="header-wrap-clone"></div>
+
+		</header><!-- #header end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title" class="page-title-center">
+
+			<div class="container clearfix">
+				<h1>Register</h1>
+				<span>Then find the appropriate manpower.</span>
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap" style="min-height: 55vh">
+
+				<div class="container clearfix">
+
+					<div class="tabs mx-auto mb-0 clearfix" id="tab-login-register" style="max-width: 500px;">
+
+						<ul class="tab-nav tab-nav2 center clearfix">
+							<li class="inline-block"><a href="#register1">User Register</a></li>
+							<li class="inline-block"><a href="#register2">Office Register</a></li>
+						</ul>
+
+						<div class="tab-container">
+
+							<div class="tab-content" id="register1">
+								<div class="card mb-0">
+									<div class="card-body" style="padding: 40px;">
+										<h3>Register for an Account</h3>
+
+										<form id="register-form" name="register-form" class="row mb-0" action="#" method="post">
+
+											<div class="col-12 form-group">
+												<label for="register-form-name">Name:</label>
+												<input type="text" id="register-form-name" name="register-form-name" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="register-form-email">Email Address:</label>
+												<input type="text" id="register-form-email" name="register-form-email" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="register-form-phone">Phone:</label>
+												<input type="text" id="register-form-phone" name="register-form-phone" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="register-form-password">Choose Password:</label>
+												<input type="password" id="register-form-password" name="register-form-password" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="register-form-repassword">Re-enter Password:</label>
+												<input type="password" id="register-form-repassword" name="register-form-repassword" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<button class="button button-3d m-0" id="register-form-submit" name="register-form-submit" value="register">Register Now</button>
+											</div>
+
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-content" id="register2">
+								<div class="card mb-0">
+									<div class="card-body" style="padding: 40px;">
+										<h3>Register for an Account</h3>
+
+										<form id="office-register-form" name="register-form" class="row mb-0" action="#" method="post">
+
+											<div class="col-12 form-group">
+												<label for="register-form-name">Name:</label>
+												<input type="text" id="office-register-form-name" name="register-form-name" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="register-form-email">Email Address:</label>
+												<input type="text" id="office-register-form-email" name="register-form-email" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="register-form-phone">Phone:</label>
+												<input type="text" id="office-register-form-phone" name="register-form-phone" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="register-form-password">Choose Password:</label>
+												<input type="password" id="office-register-form-password" name="register-form-password" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="register-form-repassword">Re-enter Password:</label>
+												<input type="password" id="office-register-form-repassword" name="register-form-repassword" value="" class="form-control" />
+											</div>
+
+											<div class="col-12 form-group">
+												<button class="button button-3d m-0" id="office-register-form-submit" name="register-form-submit" value="register">Register Now</button>
+											</div>
+
+										</form>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</section><!-- #content end -->
+
+		<div class="position-relative"  style="background-color: rgba(51,94,238,0.08);">
+			<svg class="svg-separator" viewBox="0 0 1440 24" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+				<path d="M0 24H1440V0C722.5 52 0 0 0 0V24Z" fill="#1ABC9C"></path>
+			</svg>
+		</div>
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="text-center py-5">
+				<div class="copyrights-menu copyright-links">
+					<a href="#">HOME</a>/<a href="#">SEARCH</a>/<a href="#">ABOUT US</a>/<a href="#">CONTACT</a>/<a href="#">PRIVACY POLICY</a>
+				</div>
+				<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-facebook">
+					<i class="icon-facebook"></i>
+					<i class="icon-facebook"></i>
+				</a>
+
+				<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-twitter">
+					<i class="icon-twitter"></i>
+					<i class="icon-twitter"></i>
+				</a>
+
+				<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-gplus">
+					<i class="icon-gplus"></i>
+					<i class="icon-gplus"></i>
+				</a>
+
+				<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-pinterest">
+					<i class="icon-pinterest"></i>
+					<i class="icon-pinterest"></i>
+				</a>
+
+				<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-vimeo">
+					<i class="icon-vimeo"></i>
+					<i class="icon-vimeo"></i>
+				</a>
+
+				<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-github">
+					<i class="icon-github"></i>
+					<i class="icon-github"></i>
+				</a>
+
+				<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-yahoo">
+					<i class="icon-yahoo"></i>
+					<i class="icon-yahoo"></i>
+				</a>
+
+				<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-linkedin">
+					<i class="icon-linkedin"></i>
+					<i class="icon-linkedin"></i>
+				</a>
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+				<div class="container">
+
+					<div class="row justify-content-between col-mb-30">
+
+						<div class="col-12 text-center">
+							Copyrights &copy; 2020 All Rights Reserved by Al Monjez Inc.
+						</div>
+					</div>
+
+				</div>
+			</div><!-- #copyrights end -->
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up rounded-circle bg-color h-bg-dark"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- DatePicker JS -->
+	<script src="js/components/moment.js"></script>
+	<script src="js/components/daterangepicker.js"></script>
+
+	<!-- Range Slider Plugin -->
+	<script src="js/components/rangeslider.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+
+		jQuery(document).ready(function() {
+
+			jQuery('.cleaning-date').daterangepicker({
+				"buttonClasses": "button button-rounded button-mini nott ls0 font-weight-semibold",
+				"applyClass": "button-color m-0 ml-1",
+				"cancelClass": "bg-danger m-0 text-light",
+				singleDatePicker: true,
+				startDate: moment().startOf('hour'),
+				minDate: moment().startOf('date'),
+				timePicker: true,
+				timePickerSeconds: false,
+				locale: {
+					format: 'DD/MM/YYYY h:mm a',
+				},
+				timePickerIncrement: 10
+			});
+
+			jQuery('.cleaning-date').val('Select Date & Time');
+
+			jQuery('.form-cleaning').on( 'formSubmitSuccess', function(){
+				jQuery('.cleaning-date').val('Select Date & Time');
+			});
+
+			// Calculator
+			var pricingAREA = 0,
+				pricingROOMS = 0,
+				pricingBATHROOMS = 0,
+				pricingLIVINGROOMS = 0,
+				pricingOTHERS = 0,
+				elementAREA = $(".clean-area"),
+				elementROOMS = $(".clean-rooms"),
+				elementBATHROOMS = $(".clean-bathrooms"),
+				elementLIVINGROOMS = $(".clean-livingrooms"),
+				elementOTHERS = $("input[name='clean-form-others[]']"),
+				elementPRICE = $("#clean-form-price");
+
+			elementAREA.ionRangeSlider({
+				min: 0,
+				max: 5000,
+				from: 0,
+				step: 10,
+				max_postfix: "sqft.",
+				onStart: function(data){
+					pricingAREA = data.from;
+				}
+			});
+
+			elementAREA.on( 'change', function(){
+				pricingAREA = $(this).prop('value');
+				calculatePrice( pricingAREA, pricingROOMS, pricingBATHROOMS, pricingLIVINGROOMS, pricingOTHERS );
+			});
+
+			elementROOMS.ionRangeSlider({
+				min: 0,
+				max: 10,
+				from: 0,
+				step: 1,
+				onStart: function(data){
+					pricingROOMS = data.from;
+				}
+			});
+
+			elementROOMS.on( 'onStart change', function(){
+				pricingROOMS = $(this).prop('value');
+				calculatePrice( pricingAREA, pricingROOMS, pricingBATHROOMS, pricingLIVINGROOMS, pricingOTHERS );
+			});
+
+			elementBATHROOMS.ionRangeSlider({
+				min: 0,
+				max: 10,
+				from: 0,
+				step: 1,
+				onStart: function(data){
+					pricingBATHROOMS = data.from;
+				}
+			});
+
+			elementBATHROOMS.on( 'onStart change', function(){
+				pricingBATHROOMS = $(this).prop('value');
+				calculatePrice( pricingAREA, pricingROOMS, pricingBATHROOMS, pricingLIVINGROOMS, pricingOTHERS );
+			});
+
+			elementLIVINGROOMS.ionRangeSlider({
+				min: 0,
+				max: 5,
+				from: 0,
+				step: 1,
+				onStart: function(data){
+					pricingLIVINGROOMS = data.from;
+				}
+			});
+
+			elementLIVINGROOMS.on( 'onStart change', function(){
+				pricingLIVINGROOMS = $(this).prop('value');
+				calculatePrice( pricingAREA, pricingROOMS, pricingBATHROOMS, pricingLIVINGROOMS, pricingOTHERS );
+			});
+
+			elementOTHERS.change(function(){
+				var pricingOTHERS = 0;
+				elementOTHERS.each(function(){
+					if($(this).is(':checked')){
+						pricingOTHERS += parseFloat($(this).attr('data-price'));
+						calculatePrice( pricingAREA, pricingROOMS, pricingBATHROOMS, pricingLIVINGROOMS, pricingOTHERS );
+					} else {
+						calculatePrice( pricingAREA, pricingROOMS, pricingBATHROOMS, pricingLIVINGROOMS, pricingOTHERS );
+					}
+				});
+			});
+
+			calculatePrice( pricingAREA, pricingROOMS, pricingBATHROOMS, pricingLIVINGROOMS, pricingOTHERS );
+
+			function calculatePrice( area, rooms, bathrooms, livingrooms, extra ) {
+				var TotalPriceValue = ( Number(area) * .2 ) + ( Number(rooms) * 4 ) + ( Number(bathrooms) * 3 ) + ( Number(livingrooms) * 5 ) + ( Number(extra) );
+				jQuery('.total-price').html( '$'+TotalPriceValue );
+				elementPRICE.val( TotalPriceValue ).change();
+			}
+
+		});
+
+	</script>
+
+</body>
+</html>
