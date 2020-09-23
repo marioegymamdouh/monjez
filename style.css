@@ -12694,7 +12694,6 @@ blockquote.float-right {
 	backface-visibility: hidden;
 	border-radius: 6px;
 }
-
 .flip-card-back {
 	position: absolute;
 	top: 0;
@@ -12704,8 +12703,7 @@ blockquote.float-right {
 
 .flip-card-inner {
 	-webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-	transform: translateY(-50%) translateZ(60px) scale(0.94);
-	top: 50%;
+	transform: translateZ(60px) scale(0.94);
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -12716,6 +12714,12 @@ blockquote.float-right {
 	-webkit-perspective: inherit;
 	perspective: inherit;
 	z-index: 2;
+	height: 100%;
+	display: flex;
+	align-content: space-evenly;
+	justify-content: start;
+	flex-wrap: wrap;
+	text-align: left;
 }
 
 .flip-card-back {
